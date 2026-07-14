@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Mail, MapPin, Phone, Sparkles } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 
 import { siteConfig, navLinks } from "@/config/site"
 
@@ -28,9 +28,11 @@ export default function Footer() {
         {/* Brand + blurb */}
         <div className="space-y-3">
           <Link to="/" className="flex items-center gap-2">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Sparkles className="size-4" />
-            </span>
+            <img
+              src="/logo.svg"
+              alt={`${siteConfig.name} logo`}
+              className="size-8 rounded-lg object-cover"
+            />
             <span className="font-bold text-foreground">{siteConfig.name}</span>
           </Link>
           <p className="text-sm text-muted-foreground">

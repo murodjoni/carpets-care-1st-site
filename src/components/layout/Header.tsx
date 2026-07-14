@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import { Menu, Phone, Sparkles, X } from "lucide-react"
+import { Menu, Phone, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -14,9 +14,12 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Sparkles className="size-5" />
-          </span>
+          <img
+            src="/logo.svg"
+            alt={`${siteConfig.name} logo`}
+            className="size-9 rounded-lg object-cover"
+          />
+
           <span className="text-lg font-bold tracking-tight text-foreground">
             {siteConfig.name}
           </span>
