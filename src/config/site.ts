@@ -35,7 +35,7 @@ export const siteConfig = {
 
   social: {
     facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
+    instagram: "https://www.instagram.com/carpets_care",
     google: "https://google.com",
   },
 } as const
