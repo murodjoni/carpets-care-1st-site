@@ -9,7 +9,7 @@ import { resolve } from "node:path"
 const BASE = (
   process.env.URL ||
   process.env.SITE_URL ||
-  "https://carpetscare.netlify.app"
+  "https://utahcarpetscare.com"
 ).replace(/\/$/, "")
 
 const routes = ["/", "/services", "/commercial", "/residential", "/about", "/contact"]

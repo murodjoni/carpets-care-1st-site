@@ -22,8 +22,7 @@ import { siteConfig } from "@/config/site"
 const trustBadges = [
   { icon: ShieldCheck, label: "Licensed & Insured" },
   { icon: BadgeCheck, label: "Satisfaction Guaranteed" },
-  { icon: Leaf, label: "Eco-Friendly Products" },
-  { icon: Clock, label: "Same-Week Availability" },
+  { icon: Leaf, label: "Eco-Friendly Products" }
 ]
 
 const whyUs = [
@@ -78,13 +77,13 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Professional Carpet Cleaning"
+        title="Carpets Care, LLC"
         description={siteConfig.description}
         path="/"
       />
       {/* Hero */}
       <section className="relative overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 lg:grid-cols-2 lg:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 lg:grid-cols-2">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
               <Star className="size-4 fill-current" />

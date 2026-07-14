@@ -34,8 +34,7 @@ const values = [
 
 const stats = [
   { value: "10+", label: "Years of experience" },
-  { value: "5,000+", label: "Rooms cleaned" },
-  { value: "5.0", label: "Average rating" },
+  { value: "80+", label: "Franchise Partners" },
   { value: "100%", label: "Satisfaction guarantee" },
 ]
 
@@ -67,17 +66,12 @@ export default function About() {
             professional-grade equipment, eco-friendly products, and a
             do-it-right attitude to every job.
           </p>
-          <p>
-            When you call us, you&apos;re not getting a faceless franchise.
-            You&apos;re getting neighbors who care about your satisfaction and
-            want to earn your business for years to come.
-          </p>
         </div>
       </section>
 
       {/* Stats */}
       <section className="bg-primary">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-14 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-14 sm:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl font-bold text-primary-foreground sm:text-4xl">

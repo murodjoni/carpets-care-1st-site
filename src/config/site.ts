@@ -10,12 +10,12 @@ export const siteConfig = {
     "Professional residential and commercial carpet cleaning. Fast, reliable, and satisfaction guaranteed. Get a free quote today.",
 
   // Contact — swap for real values
-  phone: "(555) 123-4567",
-  phoneHref: "tel:+15551234567",
+  phone: "(385) 452-0484",
+  phoneHref: "tel:+13854520484",
   email: "carpetscarellc@gmail.com",
 
   // Location / service area
-  serviceArea: "Greater Metro Area",
+  serviceArea: "Utah, Salt Lake, Morgan, Davis, Wasatch, Weber Counties",
   address: {
     street: "123 Main Street",
     city: "Your City",
@@ -26,12 +26,12 @@ export const siteConfig = {
   // Hours (used in footer + JSON-LD later)
   hours: [
     { days: "Mon – Fri", time: "8:00 AM – 6:00 PM" },
-    { days: "Saturday", time: "9:00 AM – 4:00 PM" },
-    { days: "Sunday", time: "Closed" },
+    { days: "Saturday", time: "Closed" },
+    { days: "Sunday", time: "9:00 AM – 4:00 PM" },
   ],
 
-  // Public site URL (used for canonical / sitemap) — update after deploy
-  url: "https://carpetscare.netlify.app",
+  // Public site URL (used for canonical / sitemap)
+  url: "https://utahcarpetscare.com",
 
   social: {
     facebook: "https://facebook.com",

@@ -43,10 +43,15 @@ export default function Header() {
 
         {/* Desktop actions */}
         <div className="hidden items-center gap-2 md:flex">
-          <Button variant="ghost" asChild>
+          <Button variant="ghost" asChild className="h-auto py-1.5">
             <a href={siteConfig.phoneHref} className="gap-2">
               <Phone className="size-4" />
-              {siteConfig.phone}
+              <span className="flex flex-col items-center leading-tight">
+                {siteConfig.phone}
+                <span className="text-xs font-normal text-muted-foreground">
+                  call or text
+                </span>
+              </span>
             </a>
           </Button>
           <Button asChild>

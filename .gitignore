@@ -32,3 +32,6 @@ dist-ssr
 
 # Playwright MCP artifacts
 .playwright-mcp
+
+# Netlify CLI edge-function artifact
+deno.lock
