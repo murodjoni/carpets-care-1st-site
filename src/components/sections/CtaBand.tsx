@@ -22,7 +22,7 @@ export default function CtaBand({
         <p className="max-w-xl text-primary-foreground/80">{subtitle}</p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button size="lg" variant="secondary" asChild>
-            <Link to="/#quote">Get a Free Quote</Link>
+            <Link to="/#quote">Book now</Link>
           </Button>
           <Button
             size="lg"

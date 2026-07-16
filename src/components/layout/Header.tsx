@@ -58,7 +58,7 @@ export default function Header() {
             </a>
           </Button>
           <Button asChild>
-            <Link to="/#quote">Get a Quote</Link>
+            <Link to="/#quote">Book now</Link>
           </Button>
         </div>
 

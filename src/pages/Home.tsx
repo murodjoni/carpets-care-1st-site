@@ -52,27 +52,6 @@ const whyUs = [
   },
 ]
 
-const testimonials = [
-  {
-    quote:
-      "They got out stains I was sure were permanent. My carpets look brand new and the whole team was so professional.",
-    name: "Sarah M.",
-    role: "Homeowner",
-  },
-  {
-    quote:
-      "We use them for our restaurant every month. Always after hours, always spotless. Highly recommend for any business.",
-    name: "David L.",
-    role: "Restaurant Owner",
-  },
-  {
-    quote:
-      "Fast, friendly, and fairly priced. Booked a quote online and they were out within days. Will use again!",
-    name: "Priya K.",
-    role: "Homeowner",
-  },
-]
-
 export default function Home() {
   return (
     <>
@@ -100,7 +79,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button size="lg" asChild>
                 <Link to="/#quote">
-                  Get a Free Quote
+                  Book now
                   <ArrowRight className="size-4" />
                 </Link>
               </Button>
@@ -130,9 +109,6 @@ export default function Home() {
               <h2 className="text-xl font-semibold text-foreground">
                 Request Your Free Quote
               </h2>
-              <p className="text-sm text-muted-foreground">
-                Tell us what you need — we&apos;ll reply fast.
-              </p>
             </div>
             <ServiceForm />
           </div>
@@ -207,37 +183,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="mx-auto max-w-6xl px-4 py-20">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            What Our Customers Say
-          </h2>
-        </div>
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {testimonials.map((t) => (
-            <Card key={t.name} className="border-border/70">
-              <CardContent className="pt-6">
-                <div className="flex gap-0.5 text-primary">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="size-4 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-sm text-foreground">
-                  “{t.quote}”
-                </blockquote>
-                <footer className="mt-4 text-sm">
-                  <span className="font-semibold text-foreground">
-                    {t.name}
-                  </span>
-                  <span className="text-muted-foreground"> · {t.role}</span>
-                </footer>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </section>
 

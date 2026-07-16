@@ -5,7 +5,7 @@
 export const siteConfig = {
   name: "Carpets Care",
   legalName: "Carpets Care LLC",
-  tagline: "Deep-Clean Carpets, Done Right",
+  tagline: "Carpet Cleaning, Done Right",
   description:
     "Professional residential and commercial carpet cleaning. Fast, reliable, and satisfaction guaranteed. Get a free quote today.",
 
